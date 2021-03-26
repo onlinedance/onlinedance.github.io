@@ -131,7 +131,7 @@
 									<div style="margin-bottom: 1.25rem;">
 										<p>Online dance group class registration (max 4 people per session) .<br/>
 										Select your package from the drop down list below:</p>
-										<select id="item-options"><option value="1 hour class" price="8">1 hour class - 8 CAD</option><option value="1 month (once a week) package (5 classes)" price="30">1 month (once a week) package (5 classes) - 30 CAD</option><option value="1 month (twice a week) package (10 classes)" price="50">1 month (twice a week) package (10 classes) - 50 CAD</option></select>
+										<select id="item-options"><option value="1 hour class" price="1">1 hour class - 1 CAD</option><option value="1 month (once a week) package (5 classes)" price="30">1 month (once a week) package (5 classes) - 30 CAD</option><option value="1 month (twice a week) package (10 classes)" price="50">1 month (twice a week) package (10 classes) - 50 CAD</option></select>
 										<select style="visibility: hidden" id="quantitySelect"></select>
 									</div>
 								<div id="paypal-button-container"></div>
@@ -209,7 +209,7 @@
 								},
 								onApprove: function(data, actions) {
 									return actions.order.capture().then(function(details) {
-										alert('Thank you for your payment ' + details.payer.name.given_name + '! ' + 'You will receive your email with Zoom link soon.');
+										alert('Thank you for your payment ' + details.payer.name.given_name + '! ' + 'You will get your zoom link sent at  ' + details.payer.email +  '.');
 									});
 								},
 								onError: function(err) {
