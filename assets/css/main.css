@@ -143,6 +143,9 @@ select {
 			h2.alt strong {
 				color: #666;
 			}
+		h2.logo {
+			font-size: 3em;
+		}
 
 	h3 {
 		font-size: 1.5em;
@@ -2247,7 +2250,7 @@ select {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 5em 0;
 				background-size: cover;
 				background-position: center center;
 			}
